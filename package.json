@@ -7,6 +7,7 @@
     "boom": "app.js"
   },
   "scripts": {
+    "start": "app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "@hdmchl",
