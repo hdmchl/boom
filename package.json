@@ -1,0 +1,15 @@
+{
+  "name": "boom",
+  "version": "1.0.0",
+  "description": "Power on UE Boom",
+  "main": "main.js",
+  "bin": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@hdmchl",
+  "license": "MIT",
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-10"
+  }
+}
