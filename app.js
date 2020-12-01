@@ -2,8 +2,22 @@
 
 const noble = require('@abandonware/noble');
 
-//const BOOM_UUID = 'c2fe00be910c41b9940d5ecc20bcdbb9'; //fMBP
-const BOOM_UUID = 'd448eb5df8794d539d343f9540e9444e'; //MBP
+const ARGS = process.argv.slice() || [];
+const option = ARGS[2] ? ARGS[2].toLowerCase() : false;
+
+let BOOM_UUID = false;
+
+switch (option) {
+case 'mbp':
+  BOOM_UUID = 'd448eb5df8794d539d343f9540e9444e'; //MBP
+  break;
+case 'fmbp':
+  BOOM_UUID = 'c2fe00be910c41b9940d5ecc20bcdbb9'; //fMBP
+  break;
+default:
+  process.exit(0);
+}
+
 const BOOM_SERVICE_UUID = '61fe';
 const BOOM_POWER_CHARACTERISTIC_UUID = 'c6d6dc0d07f547ef9b59630622b01fd3';
 const BOOM_POWER_VALUE = Buffer.from('8C8590CCCFB601', 'hex');
