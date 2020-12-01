@@ -2,8 +2,10 @@
   "name": "boom",
   "version": "1.0.0",
   "description": "Power on UE Boom",
-  "main": "main.js",
-  "bin": "main.js",
+  "main": "app.js",
+  "bin": {
+    "boom": "app.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
